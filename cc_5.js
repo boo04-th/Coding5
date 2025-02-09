@@ -20,3 +20,12 @@ const order = {
     }
   }; //Console log of customer order 
   order.displayOrder();
+
+  //Task 3: Array Manipulation (push, pop, shift, unshift)
+  let cartItems = ["Newport", "Kool", "Clipper"]; // Array of items
+  cartItems.push("Salem"); // Adding new item
+  cartItems.pop(); // Removing last item
+  cartItems.unshift("Westport"); // Adding item to beginning
+  cartItems.shift(); // removing beginning item
+  console.log(cartItems);
+  
