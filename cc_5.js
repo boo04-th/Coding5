@@ -49,11 +49,19 @@ const customers = ["Alice", "Bob", "Charlie", "David"];//Declaring an array
 const foundCustomer = customers.find(customer => customer === "Charlie"); // Using the .find() method to locate the customer "Charlie"
 console.log(foundCustomer);// Logging the result to the console
 
-//Task 8: Function Declaration
-function calculateTax(amount) {
-    let tax = amount * 0.18; //// Multiply the amount by 18% tax rate
-    console.log(`The calculated tax for $${amount} at an 18% tax rate is $${tax.toFixed(2)}.`);
+// Task 8 Function Declaration
+function calculateTax(amount, taxRate) {
+    let tax = amount * taxRate;
+    console.log(`Tax: $${tax.toFixed(2)}`);
     return tax;
-  }
-  calculateTax(100);
-  
+}; // Creating a calculate tax function
+
+calculateTax(500, 0.05); // Declaring numbers for calculating tax
+
+//Task 9: Function Expression
+const applyDiscount = function(price, discount) {
+    const discountedPrice = price - price * discount;
+    console.log(`Discounted Price: $${discountedPrice}`);
+    return discountedPrice;
+  };  // Creating a function expression for applying discount
+  applyDiscount(200, 0.15); // 10% discount on $200
