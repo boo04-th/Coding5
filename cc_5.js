@@ -49,4 +49,11 @@ const customers = ["Alice", "Bob", "Charlie", "David"];//Declaring an array
 const foundCustomer = customers.find(customer => customer === "Charlie"); // Using the .find() method to locate the customer "Charlie"
 console.log(foundCustomer);// Logging the result to the console
 
-
+//Task 8: Function Declaration
+function calculateTax(amount) {
+    let tax = amount * 0.18; //// Multiply the amount by 18% tax rate
+    console.log(`The calculated tax for $${amount} at an 18% tax rate is $${tax.toFixed(2)}.`);
+    return tax;
+  }
+  calculateTax(100);
+  
