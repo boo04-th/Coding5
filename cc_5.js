@@ -42,7 +42,7 @@ console.log(availableProducts);
 //Task 6: Reduce Method
 const sales = [500, 300, 200, 400];
 const totalRevenue = sales.reduce((total, sale) => total + sale, 0);
-console.log(totalRevenue);
+console.log(`Total Revenue: $${totalRevenue}`);
 
 //Task 7: find() Method
 const customers = ["Alice", "Bob", "Charlie", "David"];//Declaring an array
@@ -65,3 +65,12 @@ const applyDiscount = function(price, discount) {
     return discountedPrice;
   };  // Creating a function expression for applying discount
   applyDiscount(200, 0.15); // 10% discount on $200
+
+  //Task 10: Arrow Function
+  const calculatePoints = purchaseAmount => {
+    const points = Math.floor(purchaseAmount / 10);
+    console.log(`Loyalty Points Earned: ${points}`);
+    return points;
+  };
+  calculatePoints(550);
+  
