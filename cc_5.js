@@ -30,8 +30,13 @@ let cartItems = ["Newport", "Kool", "Clipper"]; // Array of items
   console.log("Final list of the Cart Items:",cartItems);
   
 //Task 4: Map Method
-const prices = [100, 200, 300]; // Array of prices
+const prices = [100, 200, 300]; // Arraying of prices
 const discountedPrices = prices.map(price => price * 0.9); //10% discount
 console.log("Discounted Prices:", discountedPrices);
+
+//Task 5: Filter Method
+const inventory = [5, 0, 12, 8, 0];
+const availableProducts = inventory.filter(quantity => quantity > 0); // Using the .filter() method
+console.log(availableProducts);
 
 
